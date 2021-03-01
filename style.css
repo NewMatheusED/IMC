@@ -83,17 +83,8 @@ form input[type='submit'] {
     color: black;
 }
 
-.table {
-    margin-top: 80px;
-}
-
-.table h3 {
-    text-align: center;
-    font-size: 30px;
-}
-
 .table table {
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     border-collapse: collapse;
 }
 
