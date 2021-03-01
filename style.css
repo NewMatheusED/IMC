@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.main {
+    background: lightblue;
+    padding: 20px 50px 50px 50px;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+form {
+    background: #E5E8EC;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+}
+
+.form-wraper {
+    display: flex;
+}
+
+.form-wraper p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.form-wraper input[type='text'] {
+    border: 1px solid lightblue;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+}
+
+.form-wraper input[type='text']:focus {
+    border-radius: 0;
+}
+
+.form-wraper .medida {
+    border: 1px solid lightblue;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+}
+
+#final {
+    text-align: center;
+    margin-top: 40px;
+}
+
+form input[type='submit'] {
+    display: block;
+    margin: 50px auto;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: black;
+}
+
+.table {
+    margin-top: 80px;
+}
+
+.table h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.table table {
+    margin: 50px auto 0 auto;
+    border-collapse: collapse;
+}
+
+
+.table table thead tr th {
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+}
+
+.table table tbody tr {
+    width: 100px;
+}
+
+.table table tbody tr.danger {
+    background-color: #f2dede;
+}
+
+.table table tbody tr.warning {
+    background-color: #fcf8e3;
+}
+
+.table table tbody tr.success {
+    background-color: #dff0d8;
+}
+
+.table table tbody tr td {
+    padding: 8px;
+    border-top: 1px solid #ddd;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="title">
+                <h3>Índice de Massa Corporal</h3>
+            </div>
+            <form>
+                <div class="flex-form">
+                    <div class="form-wraper">
+                        <p>Peso</p>
+                        <input id="peso" type="text" placeholder="Ex: 70">
+                        <div class="medida">Kgs</div>
+                    </div><!--form-wraper-->
+                    <div class="form-wraper">
+                        <p>Altura</p>
+                        <input id="altura" type="text" placeholder="Ex: 1,70">
+                        <div class="medida">M</div>
+                    </div><!--form-wraper-->
+                </div><!--flex-form-->
+                <p id="final"></p>
+                <input type="submit" name="acao" value="Calcular">
+            </form>
+
+            <div class="table">
+                <h3>Tabela IMC - Padrão</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>Categoria</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="danger Magreza-Grave">
+                            <td>Abaixo de 16,00</td>
+                            <td>Magreza grave</td>
+                        </tr>
+
+                        <tr class="warning Magreza-Moderada">
+                            <td>Entre 16,00 e 16,99</td>
+                            <td>Magreza moderada</td>
+                        </tr>
+
+                        <tr class="warning Magreza-Leve">
+                            <td>Entre 17,00 e 18,49</td>
+                            <td>Magreza Leve</td>
+                        </tr>
+
+                        <tr class="success Saudável
+                        ">
+                            <td>Entre 18,50 e 24,99</td>
+                            <td>Saudável</td>
+                        </tr>
+
+                        <tr class="warning Sobrepeso">
+                            <td>Entre 25,00 e 29,99</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+
+                        <tr class="warning Obesidade-Grau-I">
+                            <td>Entre 30,00 e 34,99</td>
+                            <td>Obesidade Grau I</td>
+                        </tr>
+
+                        <tr class="danger Obesidade-Grau-II">
+                            <td>Entre 35,00 e 39,99</td>
+                            <td>Obesidade Grau II</td>
+                        </tr>
+
+                        <tr class="danger Obesidade-Grau-III">
+                            <td>40,00 ou acima</td>
+                            <td>Obesidade Grau III</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div><!--container-->
+<script src="app.js"></script>
+</body>
+</html>
