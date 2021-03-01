@@ -8,7 +8,7 @@ $(function(){
         IMC = IMC.toFixed(2);
 
         var imcValue = 'none'
-        if(IMC <= 16) {
+        if(IMC < 16) {
             imcValue = 'Magreza Grave'
         }else if(IMC >= 16 && IMC <= 16.99) {
             imcValue = 'Magreza Moderada'
