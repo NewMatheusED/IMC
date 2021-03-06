@@ -4,6 +4,10 @@ $(function(){
         var altura = parseFloat($('#altura').val().replace(',', '.'));
         var display = $('#final');
 
+        $('html').animate({
+            scrollTop: 100
+        },500)
+        
         var IMC = peso / altura**2;
         IMC = IMC.toFixed(2);
 
